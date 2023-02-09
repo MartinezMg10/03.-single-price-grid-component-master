@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Karla', sans-serif;
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+body{
+    background-color: var(--LightGray);
+    Font-size: 16px
+}
+
+.container{
+    height: 720px;
+    width: 315px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.containerUno{
+    background-color:white;
+    height: 270px;
+    padding-left: 25px;
+    padding-right: 22px;
+}
+
+.containerUno h2{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    color: var(--Cyan);
+}
+
+.primero{
+    color: var(--BrightYellow);
+}
+
+.containerUno p{
+    padding-top: 20px;
+    color:rgba(177,181,190,255);
+}
+
+.containerButtom{
+    background-color: var(--Cyan);
+    color: white;
+        padding: 25px 22px 25px 25px;
+}
+
+.containerButtom p{
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.containerButtom h3{
+    padding-bottom: 20px;
+}
+
+button{
+    width: 265px;
+    height: 45px;
+    background-color: var(--BrightYellow);
+    border-radius: 5px;
+    border: 0 solid;
+    color: white;
+}
+
+.dolar{
+    padding-top: 20px;
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+.dolarSecond{
+    color: rgba(101,213,212,255);
+}
+
+.containerLast{
+    background-color: rgba(74,190,189,255);
+    color: white;
+    height: 220px;    
+    padding: 30px 20px 25px;
+}
+
+.containerLast p{
+    padding-top: 20px;
+    width: 185px;
+    height: 140px ;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1440px) { 
+
+
+    .container{
+        width: 637px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        display: grid;
+        place-content: center;
+    }
+
+
+    .containerUno{
+        font-size: 1.1em;
+    }
+
+    .containerUno h2{
+        padding-top: 45px;
+    }
+
+    .containerUno span{
+        padding-top: 35px;
+    }
+
+    .containerUno p{
+        padding-top: 20px;
+        line-height: 30px;
+    }
+
+    .containerTwo{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .containerButtom{
+        width: 50%;
+        height: 100%;
+    }
+
+    .containerLast{
+        width: 50%;
+        height: 100%;
+        font-size: 1.1em;
+    }
+}
+
+
+
+.attribution { font-size: 11px; text-align: center;  opacity: 0;}
+.attribution a { color: hsl(228, 45%, 44%); }
